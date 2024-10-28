@@ -1,0 +1,178 @@
+Worker ID      Name         Variability    Ability   Experience Label
+0              Peter        -3             53        Senior
+1              Sam          -2             82        Ordinary
+2              Tommy        -7             61        Ordinary
+3              James        -4             72        Ordinary
+4              Amanda       -5             62        Ordinary
+5              Hellen       -8             46        Ordinary
+6              Kim          -3             71        Ordinary
+7              Young        -4             62        Senior
+8              Linda        -5             44        Senior
+9              Ryan         -2             82        Ordinary
+10             Jhon         -7             72        Ordinary
+
+======================================================================
+Processing Task ID: 1
+Description	: image processing
+Uncertainty	: 6
+Difficulty	: 10
+Priority	: 1
+Workers		: 7, 0, 8
+	---------------------------------------------
+	Trial (1/3), Senior worker : 7
+	---------------------------------------------
+	The average performance is: 58
+	Assignment of Task 1 to worker 7 succeeds.
+
+======================================================================
+Processing Task ID: 2
+Description	: natural language processing
+Uncertainty	: 7
+Difficulty	: 15
+Priority	: 1
+Workers		: 8, 1, 3
+	---------------------------------------------
+	Trial (1/3), Senior worker : 8
+	---------------------------------------------
+	The average performance is: 35
+	Assignment of Task 2 to worker 8 fails.
+	---------------------------------------------
+	Trial (2/3), Ordinary Worker : 1
+	---------------------------------------------
+	The average performance is: 66
+	Assignment of Task 2 to worker 1 succeeds.
+
+======================================================================
+Processing Task ID: 3
+Description	: computer vision
+Uncertainty	: 5
+Difficulty	: 10
+Priority	: 0
+Workers		: 0, 1
+	---------------------------------------------
+	Trial (1/2), Senior worker : 0
+	---------------------------------------------
+	The average performance is: 47
+	Assignment of Task 3 to worker 0 fails.
+	---------------------------------------------
+	Trial (2/2), Ordinary Worker : 1
+	---------------------------------------------
+	The average performance is: 71
+	Assignment of Task 3 to worker 1 succeeds.
+
+======================================================================
+Processing Task ID: 4
+Description	: friend recommendation
+Uncertainty	: 1
+Difficulty	: 19
+Priority	: 0
+Workers		: 2, 8, 5
+	---------------------------------------------
+	Trial (1/3), Ordinary Worker : 2
+	---------------------------------------------
+	The average performance is: 43
+	Assignment of Task 4 to worker 2 fails.
+	---------------------------------------------
+	Trial (2/3), Senior worker : 8
+	---------------------------------------------
+	The average performance is: 31
+	Assignment of Task 4 to worker 8 fails.
+	---------------------------------------------
+	Trial (3/3), Ordinary Worker : 5
+	---------------------------------------------
+	The average performance is: 20
+	Assignment of Task 4 to worker 5 fails.
+	No worker was able to complete Task 4
+
+======================================================================
+Processing Task ID: 5
+Description	: knowledge discovery
+Uncertainty	: 9
+Difficulty	: 12
+Priority	: 0
+Workers		: 0, 1, 6
+	---------------------------------------------
+	Trial (1/3), Senior worker : 0
+	---------------------------------------------
+	The average performance is: 48
+	Assignment of Task 5 to worker 0 fails.
+	---------------------------------------------
+	Trial (2/3), Ordinary Worker : 1
+	---------------------------------------------
+	The average performance is: 73
+	Assignment of Task 5 to worker 1 succeeds.
+
+======================================================================
+Processing Task ID: 6
+Description	: data analytics
+Uncertainty	: 8
+Difficulty	: 11
+Priority	: 1
+Workers		: 3, 9
+	---------------------------------------------
+	Trial (1/2), Ordinary Worker : 3
+	---------------------------------------------
+	The average performance is: 60
+	Assignment of Task 6 to worker 3 succeeds.
+
+======================================================================
+Processing Task ID: 7
+Description	: seed selection
+Uncertainty	: 6
+Difficulty	: 14
+Priority	: 1
+Workers		: 9, 5, 6, 3
+	---------------------------------------------
+	Trial (1/4), Ordinary Worker : 9
+	---------------------------------------------
+	The average performance is: 68
+	Assignment of Task 7 to worker 9 succeeds.
+
+======================================================================
+Processing Task ID: 8
+Description	: data mining
+Uncertainty	: 7
+Difficulty	: 15
+Priority	: 0
+Workers		: 1, 2, 4
+	---------------------------------------------
+	Trial (1/3), Ordinary Worker : 1
+	---------------------------------------------
+	The average performance is: 69
+	Assignment of Task 8 to worker 1 succeeds.
+
+======================================================================
+Processing Task ID: 9
+Description	: pattern recognition
+Uncertainty	: 5
+Difficulty	: 20
+Priority	: 0
+Workers		: 0, 3, 4
+	---------------------------------------------
+	Trial (1/3), Senior worker : 0
+	---------------------------------------------
+	The average performance is: 38
+	Assignment of Task 9 to worker 0 fails.
+	---------------------------------------------
+	Trial (2/3), Ordinary Worker : 3
+	---------------------------------------------
+	The average performance is: 52
+	Assignment of Task 9 to worker 3 succeeds.
+
+======================================================================
+Processing Task ID: 10
+Description	: clustering
+Uncertainty	: 2
+Difficulty	: 12
+Priority	: 0
+Workers		: 2, 1, 7, 5
+	---------------------------------------------
+	Trial (1/4), Ordinary Worker : 2
+	---------------------------------------------
+	The average performance is: 46
+	Assignment of Task 10 to worker 2 fails.
+	---------------------------------------------
+	Trial (2/4), Ordinary Worker : 1
+	---------------------------------------------
+	The average performance is: 70
+	Assignment of Task 10 to worker 1 succeeds.
