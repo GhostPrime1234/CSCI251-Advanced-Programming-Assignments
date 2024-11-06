@@ -1,0 +1,3 @@
+C:\Users\Michael\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\Assignment2.dir/objects.a
+C:\Users\Michael\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\Assignment2.dir/objects.a @CMakeFiles\Assignment2.dir\objects1.rsp
+C:\msys64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Assignment2.dir/objects.a -Wl,--no-whole-archive -o Assignment2.exe -Wl,--out-implib,libAssignment2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Assignment2.dir\linkLibs.rsp

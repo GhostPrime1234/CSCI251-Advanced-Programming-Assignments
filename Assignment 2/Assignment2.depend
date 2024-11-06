@@ -1,0 +1,88 @@
+# depslib dependency file v1.0
+1727680492 source:c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\src\electoralentities.cpp
+	<random>
+	<array>
+	<numeric>
+	<utility>
+	<iostream>
+	<algorithm>
+	"../headers/ElectoralEntities.h"
+
+1727680710 c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\headers\electoralentities.h
+	<array>
+	<vector>
+	"Stance.h"
+	"PoliticalParty.h"
+	"EventManagement.h"
+	<string>
+	<array>
+	<vector>
+	<stdexcept>
+
+1727680984 c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\headers\stance.h
+	"Issue.h"
+
+1727662651 c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\headers\issue.h
+	<string>
+
+1727673344 c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\headers\politicalparty.h
+	"Leader.h"
+	"People.h"
+	"Candidate.h"
+	<string>
+	<array>
+	<vector>
+
+1727675030 c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\headers\leader.h
+	<string>
+	"People.h"
+
+1727673605 c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\headers\people.h
+	<string>
+	<vector>
+	<array>
+	"Stance.h"
+
+1727680364 c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\headers\candidate.h
+	"People.h"
+	"ElectoralEntities.h"
+	"Stance.h"
+	<array>
+	<string>
+
+1727681034 c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\headers\eventmanagement.h
+	"ElectoralEntities.h"
+	<random>
+	<iostream>
+	<algorithm>
+
+1727681054 source:c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\src\eventmanagement.cpp
+	"../headers/EventManagement.h"
+
+1727662516 source:c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\src\issue.cpp
+	"../headers/Issue.h"
+
+1727662516 source:c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\src\main.cpp
+	<iostream>
+	<vector>
+	<cstdlib>
+	"../headers/People.h"
+	"../headers/PoliticalParty.h"
+	"../headers/ElectoralEntities.h"
+	"../headers/Stance.h"
+
+1727673540 source:c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\src\people.cpp
+	"../headers/People.h"
+
+1727662516 source:c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\src\politicalparty.cpp
+	<stdexcept>
+	<iostream>
+	"../headers/PoliticalParty.h"
+
+1727680984 source:c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\src\stance.cpp
+	"../headers/Stance.h"
+
+1727684951 source:c:\users\michael\onedrive - university of wollongong\uow\bachelor of computer science\year2\spring\csci251 - advanced programming\assessments\assignment2\src\leader.cpp
+	"../headers/Leader.h"
+	"../headers/Candidate.h"
+

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>810</x>
+      <y>252</y>
+      <w>171</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Election
+--
+-divisions: ElectoralDivision[]
+-parties: PoliticalParty[]
+-eventDays: EventDay[]
+--
++runSimulation(): bool
++computeResults(): float</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>549</x>
+      <y>441</y>
+      <w>261</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>ElectoralDivision
+--
+-population: double
+-stances: Stance[]
+-candidates: Candidate[]
+--
++ElectoralDivision(double): ElectoralDivision
++addStance(Stance&amp;): void
++updateStances(): void
++getStances(): Candidate[]
++calculateWinner(): Candidate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>936</x>
+      <y>441</y>
+      <w>216</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>PoliticalParty
+--
+-leader: Leader
+-candidates: Candidate[]
+-stances: Stance[]
+--
++getWinningCandidate(): Candidate
++updateStances(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1188</x>
+      <y>441</y>
+      <w>234</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>EventDay
+--
+-events: Event[]
+--
++triggerEvents(ElectoralDivsion*): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>639</x>
+      <y>351</y>
+      <w>225</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..*</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;60.0;230.0;60.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>837</x>
+      <y>351</y>
+      <w>207</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=3
+manages</panel_attributes>
+    <additional_attributes>200.0;100.0;200.0;60.0;10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>999</x>
+      <y>396</y>
+      <w>279</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..*</panel_attributes>
+    <additional_attributes>270.0;50.0;270.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1197</x>
+      <y>558</y>
+      <w>243</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Event
+--
+-type: String
+-probability: double
+--
++executeEvent(ElectoralDivison&amp;): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1278</x>
+      <y>495</y>
+      <w>45</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1..*</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>981</x>
+      <y>594</y>
+      <w>117</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>People
+--
+#popularity: double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>837</x>
+      <y>702</y>
+      <w>198</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Candidate
+--
+-stances: Stance[]
+--
++getPopularity(): double
++updatePopularity(double): void
++calculateScore(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1017</x>
+      <y>540</y>
+      <w>27</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1053</x>
+      <y>702</y>
+      <w>216</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Leader
+--
++updatePopularity(double): void
++getPopularity(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>954</x>
+      <y>630</y>
+      <w>72</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+m1=</panel_attributes>
+    <additional_attributes>10.0;80.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1026</x>
+      <y>630</y>
+      <w>99</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>90.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>801</x>
+      <y>540</y>
+      <w>162</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..*</panel_attributes>
+    <additional_attributes>150.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>306</x>
+      <y>441</y>
+      <w>153</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Issue
+--
+-name: String
+-significance: double
+--
++Issue(String, double)
++getName(): String
++getSignificance(): double
++measure(): double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>630</y>
+      <w>225</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>Stance
+--
+-issue: Issue
+-strength: double
+--
++Stance(Issue, double, Position)
++getPosition(): double
++getIssue(): Issue&amp;
++setPosition(double): void
++calculateSimilarity(Stance): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>549</x>
+      <y>576</y>
+      <w>45</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..5
+m2=
+</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>486</y>
+      <w>117</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..5
+m2=
+</panel_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>684</y>
+      <w>279</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..*</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0;290.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1530</x>
+      <y>441</y>
+      <w>207</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>ElectionDay
+--
+divisionResults:  vector
+totalWinsPerParty: int
+finalWinner:  PoliticalParty
+isHungParliament: bool
+coefficients: List
+stanceAndPopulationFactors: List
+electionSummary: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>504</y>
+      <w>378</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..5</panel_attributes>
+    <additional_attributes>10.0;180.0;230.0;180.0;340.0;10.0;400.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1413</x>
+      <y>468</y>
+      <w>135</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
